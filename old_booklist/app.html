@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book List</title>
+
+    <style>
+      .success, .error {
+        color: white;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+      }
+      .success {
+        background: green;
+      }
+      .error {
+        background: red;
+      }
+    </style>
+  </head>
+<body>
+  <div class="container">
+    <h1>Book List</h1>
+    <p>Please input a book to be stored</p>
+    <form>
+      <label for="bookTitle">Book Title: </label>
+      <input id="bookTitle" type="text" placeholder="Title" class="u-full-width">
+    </form>
+    <form>
+      <label for="bookAuthor">Book Author: </label>
+      <input id="bookAuthor" type="text" placeholder="Author" class="u-full-width">
+    </form>
+    <form>
+      <label for="bookGenre">Book Genre: </label>
+      <input type="text" id="bookGenre" placeholder="Genre" class="u-full-width">
+    </form>
+    <form>
+      <label for="bookYearRelease">Year of release: </label>
+      <input type="text" id="bookYearRelease" placeholder="Year Release" class="u-full-width">
+    </form>
+    <form>
+      <label for="bookNumberOfPages">Number of pages: </label>
+      <input type="text" id="bookNumberOfPages" placeholder="Number of Pages" class="u-full-width">
+    </form>
+    <input id="addBookButton" type="submit" value="Add book" class="btn btn-primary u-full-width">
+
+    <!-- List of books -->
+    <h2 id="booksHeader">Books</h2>
+    <hr>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+        </tr>
+      </thead>
+      <tbody id="book-list"><!-- Insert book items here -->
+        <tr>
+          <td>Test</td>
+          <td>Test 2</td>
+          <td>Test 3</td>
+          <td><a href="#" class="delete">X</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
