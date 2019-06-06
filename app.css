@@ -1,9 +1,11 @@
-form input[type="text"] {
+div.container form input[class="bookInput u-full-width"] {
     border-radius: 20px;
 }
 
 .success, .fail {
     color: white;
+    text-align: center;
+    height: 30px;
 }
 
 .success {
